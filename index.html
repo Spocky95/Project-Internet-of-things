@@ -26,14 +26,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body
-    class="flex flex-col w-screen h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 bg-no-repeat"
+    class="flex flex-col h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 bg-no-repeat"
   >
     <!--Title-->
     <h1 id="title" class="text-center italic text-7xl mt-20 bold">
       Minutnik.ino
     </h1>
     <!--Timer display-->
-    <p id="time" class="text-center my-60 text-5xl">0</p>
+    <div class="my-auto">
+      <p id="time" class="text-center text-5xl items-center">0</p>
+    </div>
     <!--Time Buttons-->
     <section class="flex flex-row">
       <button
@@ -61,7 +63,7 @@
 
     <!--Confirm Button-->
     <button
-      class="px-4 py-2 mt-10 mb-5 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/2 text-center mx-auto"
+      class="px-4 py-2 mt-10 mb-20 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/2 text-center mx-auto"
       id="confirm"
       onclick="post()"
     >
