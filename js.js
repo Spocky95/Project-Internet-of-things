@@ -29,3 +29,8 @@ async function addTime() {
 function timeUpdate() {
   document.getElementById("time").textContent = time;
 }
+
+function post() {
+  document.getElementById("time").textContent = "Posted";
+  time = 0;
+}
