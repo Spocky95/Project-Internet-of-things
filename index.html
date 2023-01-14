@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Tailwind Import-->
+    <!--Tailwind.css classes Import-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--In Case of need-->
     <link rel="stylesheet" href="styles.css" />
@@ -34,7 +34,7 @@
     </h1>
     <!--Timer display-->
     <div class="my-auto">
-      <p id="time" class="text-center text-5xl items-center">0</p>
+      <p id="time" class="text-center text-5xl items-center">0s</p>
     </div>
     <!--Time Buttons-->
     <section class="flex flex-row">
@@ -60,7 +60,6 @@
         +15s
       </button>
     </section>
-
     <!--Confirm Button-->
     <button
       class="px-4 py-2 mt-10 mb-20 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/2 text-center mx-auto"
@@ -70,6 +69,6 @@
       Confirm
     </button>
     <!--Js import-->
-    <script src="js.js"></script>
+    <script src="js.js" defer></script>
   </body>
 </html>

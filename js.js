@@ -27,7 +27,7 @@ async function addTime() {
 }
 
 function timeUpdate() {
-  document.getElementById("time").textContent = time;
+  document.getElementById("time").textContent = time + "s";
 }
 
 function post() {
