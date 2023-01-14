@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <!--Fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <!--CDN Normalize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Tailwind Import-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--In Case of need-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="flex flex-col w-screen h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"
+  >
+    <!--Title-->
+    <h1 id="title" class="text-center italic text-7xl mt-20 bold">
+      Minutnik.ino
+    </h1>
+    <!--Timer display-->
+    <p id="time" class="text-center my-60 text-5xl">0</p>
+    <!--Time Buttons-->
+    <section class="flex flex-row space-x-4">
+      <button
+        class="px-4 py-2 mt-10 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/3 text-center mx-auto"
+        id=""
+        onclick="removeTime()"
+      >
+        -15s
+      </button>
+      <button
+        class="px-4 py-2 mt-10 mx-20 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/3 text-center mx-auto"
+        id=""
+        onclick="resetTimer()"
+      >
+        reset
+      </button>
+      <button
+        class="px-4 py-2 mt-10 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/3 text-center mx-auto"
+        id=""
+        onclick="addTime()"
+      >
+        +15s
+      </button>
+    </section>
+
+    <!--Confirm Button-->
+    <button
+      class="px-4 py-2 mt-10 mb-5 font-semibold text-2xl bg-violet-500 hover:bg-violet-400 w-1/2 text-center mx-auto"
+      id="confirm"
+      onclick=""
+    >
+      Confirm
+    </button>
+    <!--Js import-->
+    <script src="js.js"></script>
+  </body>
+</html>
