@@ -4,7 +4,7 @@ let time = 0;
 
 async function removeTime() {
   console.log("time decrement");
-  time = time -= 15;
+  time -= 15;
   if (time < 0) {
     time = 0;
   }
@@ -21,7 +21,7 @@ async function resetTimer() {
 
 async function addTime() {
   console.log("time increment");
-  time = time += 15;
+  time += 15;
   console.log(time);
   await timeUpdate();
 }
@@ -33,4 +33,15 @@ function timeUpdate() {
 function post() {
   document.getElementById("time").textContent = "Posted";
   time = 0;
+  //---------------
+  axios.defaults.baseURL = "https://ptsv3.com";
+  axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+  axios
+    .post("/t/4322432342/", { time: 5 })
+    .then((response) => {
+      console.log(response.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }

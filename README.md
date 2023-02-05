@@ -7,3 +7,4 @@
 ◽ Css/Normalize.css
 ◽ Tailwind
 ◽ JavaScript
+◽ Axios
